@@ -51,8 +51,8 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  if s [:alpha]
-     if s in ['a','e','i','o','u']
+  if s in [:alpha]
+     if s.downcase in ['a','e','i','o','u']
         return False
      else 
         return True
@@ -61,6 +61,15 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  number = str_to_int(s)
+  if number.IsDigit()
+     binary_conversion = number.to_i(2)
+     if binary_conversion % 4 == 0
+        return True
+     else
+       return False
+     end
+  end  
 end
 
 # Part 3
