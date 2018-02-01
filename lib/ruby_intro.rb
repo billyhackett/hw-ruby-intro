@@ -51,7 +51,7 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  if s in [:alpha]
+  if  s.IsAlpha   # maybe I should use [[:alpha]] to test if string is all letters
      if s.downcase in ['a','e','i','o','u']
         return False
      else 
