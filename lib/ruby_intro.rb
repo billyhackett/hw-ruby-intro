@@ -23,7 +23,7 @@ def max_2_sum arr
   if array[1] == NIL
     return array[0]
   else
-    max_sum =sorted_array[-2,sorted_array.size] 
+    max_sum =sorted_array[-2,sorted_array.size]
   end
   sum = max_sum[0] + max_sum[1]
   return sum
@@ -54,23 +54,23 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  if s in [:alpha]
-     if s.downcase in ['a','e','i','o','u']
-        return False
-     else 
-        return True
-     end
+  if s[/[a-zA-Z]+/] == s
+        if['a','e','i','o','u'].include? s.downcase
+          return FALSE
+        else
+          return TRUE
+        end
+  end
 end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  number = str_to_int(s)
-  if number.IsDigit()
-     binary_conversion = number.to_i(2)
+  if s[/\A[-+]?[0-9]+/] == s
+     binary_conversion = s.to_i(2)
      if binary_conversion % 4 == 0
-        return True
+        return TRUE
      else
-       return False
+       return FALSE
      end
   end  
 end
