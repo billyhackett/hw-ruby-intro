@@ -1,8 +1,17 @@
+
 # When done, submit this entire file to the autograder.
 
 # Part 1
 
 def sum arr
+  total  = 0
+  if array == []
+    return total
+  else 
+    array.each() do |element| total += element
+    end
+    return total
+  end
   # YOUR CODE HERE
 end
 
