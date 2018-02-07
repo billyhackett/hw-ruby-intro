@@ -87,6 +87,13 @@ class BookInStock
   def isbn
       @isbn
   end
+  def price=(new_price)
+     @price = new_price
+  end
+    
+  def isbn=(new_isbn)
+      @isbn = new_isbn
+  end
   def price_as_string
        puts("$ #{self.price}.float"}
   end
