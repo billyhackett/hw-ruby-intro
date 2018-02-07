@@ -25,22 +25,21 @@ def max_2_sum arr
   else
     max_sum =sorted_array[-2,sorted_array.size]
   end
-  sum = max_sum[0] + max_sum[1]
-  return sum
+  sum = max_sum[0] + max_sum[  return sum
 end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
-  if arr == [] vi
+  if arr == [] 
     return False
   end
   new_arr = arr.combination(2).to_a
     new_arr.each { |item|
         if sum(item) == n
-          return True
+          return TRUE
         end
     end    
-   return False
+   return FALSE
     
 end
 
@@ -78,8 +77,20 @@ end
 # Part 3
 
 class BookInStock
-  &ISBN,&price
-  
+  def intialize(isbn,price)
+      @isbn = isbn
+      @price = price
+  end
+  def price
+      @price
+  end
+  def isbn
+      @isbn
+  end
+  def price_as_string
+       puts("$ #{self.price}.float"}
+  end
+end
 # YOUR CODE HERE
   def price_as_string
      puts("$#{&price}.float")
