@@ -78,5 +78,10 @@ end
 # Part 3
 
 class BookInStock
+  &ISBN,&price
+  
 # YOUR CODE HERE
+  def price_as_string
+     puts("$#{&price}.float")
+    
 end
