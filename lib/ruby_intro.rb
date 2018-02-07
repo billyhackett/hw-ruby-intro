@@ -9,7 +9,7 @@ def sum arr
   if array == []
     return total
   else
-    array.each() { |elemeent| do total += array[element] }
+    array.each() do  |elemeent|  total += element
   end
   return total
 end
@@ -17,23 +17,26 @@ end
 def max_2_sum arr
   # YOUR CODE HERE
   sorted_array = array.sort
-  if array[1] == Nil
+  if array[0] == NIL
+    return 0
+  end
+  if array[1] == NIL
     return array[0]
   else
-    sorted_array[-2,sorted_array.size] 
-    max_sum = sorted_array[0] + sorted_array[1]
+    max_sum =sorted_array[-2,sorted_array.size] 
   end
-  return max_sum
+  sum = max_sum[0] + max_sum[1]
+  return sum
 end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
-  if arr == [] 
+  if arr == [] vi
     return False
   end
-  new_arr = arr.combination(2)to_a
-    for each index do 
-        if sum(new_arr[index]) == n
+  new_arr = arr.combination(2).to_a
+    new_arr.each { |item|
+        if sum(item) == n
           return True
         end
     end    
