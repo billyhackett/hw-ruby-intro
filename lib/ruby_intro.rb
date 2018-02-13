@@ -25,7 +25,8 @@ def max_2_sum arr
   else
     max_sum =sorted_array[-2,sorted_array.size]
   end
-  sum = max_sum[0] + max_sum[  return sum
+  sum = max_sum[0] + max_sum[1]
+  return sum
 end
 
 def sum_to_n? arr, n
@@ -38,7 +39,8 @@ def sum_to_n? arr, n
         if sum(item) == n
           return TRUE
         end
-    end    
+      }
+        
    return FALSE
     
 end
@@ -53,8 +55,10 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  if s[/[a-zA-Z]+/] == s
-        if['a','e','i','o','u'].include? s.downcase
+  if s != ''
+      the_first_letter = s[0]   
+      if the_first_letter[/[a-zA-Z]+/] == the_first_letter
+          if['a','e','i','o','u'].include? the_first_lettr.downcase
           return FALSE
         else
           return TRUE
@@ -64,6 +68,10 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  if s == ''
+      puts "The empty string is not a valid binary number!"
+      return FALSE
+  end
   if s[/\A[-+]?[0-9]+/] == s
      binary_conversion = s.to_i(2)
      if binary_conversion % 4 == 0
@@ -71,6 +79,10 @@ def binary_multiple_of_4? s
      else
        return FALSE
      end
+  else
+     puts "#{s}is not a valid binary number!"
+     return FALSE
+  end
   end  
 end
 
